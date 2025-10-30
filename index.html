@@ -131,7 +131,7 @@
     <div id="game-container">
         <canvas id="game-canvas" width="400" height="400"></canvas>
         <div id="game-over">
-            GAME OVER!<br>
+            Dear Benduk!<br>
             <button onclick="restartGame()">PLAY AGAIN ?</button>
         </div>
     </div>
@@ -247,7 +247,7 @@
             // Check food collision
             if (head.x === food.x && head.y === food.y) {
                 score += 10;
-                scoreElement.textContent = `SCORE: ${score}`;
+                scoreElement.textContent = `Namrata, ur score: ${score}`;
                 food = generateFood();
                 gameSpeed = Math.max(50, gameSpeed - 1);
             } else {
@@ -386,3 +386,4 @@
 </body>
 
 </html>
+
